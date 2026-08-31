@@ -35,9 +35,9 @@ export const projects = [
             "Lenis"
         ],
 
-        live: "#",
+        live: "https://nova-ai-brown-xi.vercel.app/",
 
-        github: "#"
+        github: "https://github.com/mr-kar/nova-ai"
 
     },
 
@@ -46,17 +46,17 @@ export const projects = [
 
         number: "02",
 
-        title: "Vertex Studio",
+        title: "Nexora",
 
         category: "Creative Digital Agency",
 
-        year: "Coming Soon",
+        year: "2025",
 
-        status: "In Progress",
+        status: "Live",
 
         accent: "#FFFFFF",
 
-        image: "/images/projects/nova.jpg",
+        image: "/images/projects/nexora.jpg",
 
         description:
             "A premium creative agency website focused on storytelling, motion design, and immersive user experiences for modern brands.",
@@ -67,9 +67,9 @@ export const projects = [
             "Tailwind CSS"
         ],
 
-        live: "#",
+        live: "https://nexora-topaz-gamma.vercel.app/",
 
-        github: "#"
+        github: "https://github.com/mr-kar/nexora"
 
     },
 
@@ -78,7 +78,7 @@ export const projects = [
 
         number: "03",
 
-        title: "Lumine Architecture",
+        title: "Aurea",
 
         category: "Luxury Architecture",
 
@@ -88,7 +88,7 @@ export const projects = [
 
         accent: "#D4AF37",
 
-        image: "/images/projects/nova.jpg",
+        image: "/images/projects/aurea.jpg",
 
         description:
             "A luxury architecture studio website featuring elegant typography, editorial layouts, and refined visual storytelling inspired by premium design studios.",
@@ -99,9 +99,9 @@ export const projects = [
             "Lenis"
         ],
 
-        live: "#",
+        live: "https://aurea-studio-sandy.vercel.app/",
 
-        github: "#"
+        github: "https://github.com/mr-kar/Aurea-Studio"
 
     },
 
@@ -120,7 +120,7 @@ export const projects = [
 
         accent: "#8B5CF6",
 
-        image: "/images/projects/nova.jpg",
+        image: "/images/projects/fikhar.png",
 
         description:
             "A premium personal portfolio crafted to showcase frontend development, creative coding, UI design, and interactive digital experiences.",
@@ -132,9 +132,9 @@ export const projects = [
             "Lenis"
         ],
 
-        live: "#",
+        live: "https://fikhar-studio.vercel.app/",
 
-        github: "#"
+        github: "https://github.com/mr-kar/fikhar-studio"
 
     }
 
