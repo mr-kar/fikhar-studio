@@ -1,0 +1,23 @@
+{
+  "name": "fikhar-studio",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.1.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "aos": "^2.3.4",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.25",
+    "lucide": "^1.23.0",
+    "split-type": "^0.3.4",
+    "tailwindcss": "^4.3.2"
+  }
+}

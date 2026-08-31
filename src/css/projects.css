@@ -1,0 +1,837 @@
+/*
+========================================
+FIKHAR STUDIO
+Projects Section
+FINAL v1.0
+========================================
+*/
+
+#projects{
+
+    position:relative;
+
+    padding:180px 0;
+
+    overflow:hidden;
+
+    background:#F7F7F5;
+
+}
+
+/* ===========================
+SECTION HEADER
+=========================== */
+
+.section-divider{
+
+    width:100%;
+    height:1px;
+
+    margin-bottom:90px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(17,24,39,.12),
+        transparent
+    );
+
+}
+
+.section-label{
+
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:.78rem;
+
+    letter-spacing:.35em;
+
+    text-transform:uppercase;
+
+    color:#2563EB;
+
+    font-weight:600;
+
+}
+
+.section-label::before{
+
+    content:"";
+
+    width:40px;
+    height:1px;
+
+    background:#2563EB;
+
+}
+
+.section-title{
+
+    margin-top:26px;
+
+    font-size:clamp(3.5rem,8vw,6rem);
+
+    line-height:.95;
+
+    font-weight:300;
+
+    letter-spacing:-.04em;
+
+    color:#111827;
+
+}
+
+.section-description{
+
+    margin-top:36px;
+
+    max-width:560px;
+
+    color:#6B7280;
+
+    line-height:2;
+
+    font-size:1.05rem;
+
+}
+
+/* ===========================
+PROJECT
+=========================== */
+
+.project{
+
+    position:relative;
+
+    align-items:center;
+
+}
+
+.project+.project{
+
+    margin-top:40px;
+
+}
+
+/* ===========================
+NUMBER
+=========================== */
+
+.project-number{
+
+    position:absolute;
+
+    top:-70px;
+
+    left:-10px;
+
+    font-size:170px;
+
+    font-weight:200;
+
+    color:#111827;
+
+    opacity:.05;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+/* ===========================
+YEAR
+=========================== */
+
+.project-year{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    background:white;
+
+    border:1px solid #E5E7EB;
+
+    color:#6B7280;
+
+    font-size:.82rem;
+
+    letter-spacing:.2em;
+
+    text-transform:uppercase;
+
+}
+
+.project-year::before{
+
+    content:"";
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:999px;
+
+    background:#22C55E;
+
+}
+
+/* ===========================
+TITLE
+=========================== */
+
+.project-title{
+
+    margin-top:36px;
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    line-height:1;
+
+    font-weight:300;
+
+    color:#111827;
+
+}
+
+/* ===========================
+CATEGORY
+=========================== */
+
+.project-category{
+
+    margin-top:18px;
+
+    font-size:.78rem;
+
+    letter-spacing:.35em;
+
+    text-transform:uppercase;
+
+    color:#2563EB;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+DESCRIPTION
+=========================== */
+
+.project-desc{
+
+    margin-top:34px;
+
+    max-width:560px;
+
+    color:#6B7280;
+
+    line-height:2;
+
+}
+
+/* ===========================
+STACK
+=========================== */
+
+.project-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:40px;
+
+}
+
+.tech{
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    background:white;
+
+    border:1px solid #E5E7EB;
+
+    color:#374151;
+
+    font-size:.85rem;
+
+    transition:.35s;
+
+}
+
+.tech:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#2563EB;
+
+    color:#2563EB;
+
+    box-shadow:
+
+    0 20px 40px rgba(37,99,235,.08);
+
+}
+
+/* ===========================
+BUTTON
+=========================== */
+
+.project-actions{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:48px;
+
+}
+
+.project-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 28px;
+
+    border-radius:999px;
+
+    background:white;
+
+    border:1px solid #E5E7EB;
+
+    color:#111827;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+.project-link:hover{
+
+    background:#111827;
+
+    color:white;
+
+    transform:translateY(-4px);
+
+}
+
+.project-link.secondary{
+
+    background:transparent;
+
+}
+
+.project-link.secondary:hover{
+
+    background:#2563EB;
+
+    border-color:#2563EB;
+
+    color:white;
+
+}
+
+/* ===========================
+PREVIEW
+=========================== */
+
+.project-preview{
+
+    position:relative;
+
+    perspective:1800px;
+
+}
+
+/* ===========================
+GLOW
+=========================== */
+
+.project-glow{
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    right:-40px;
+
+    top:60px;
+
+    border-radius:999px;
+
+    opacity:.12;
+
+    filter:blur(110px);
+
+    animation:floatGlow 7s ease-in-out infinite;
+
+    z-index:-1;
+
+}
+
+/* ===========================
+STATUS BADGE
+=========================== */
+
+.project-badge{
+
+    position:absolute;
+
+    top:24px;
+
+    right:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 18px;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(17,24,39,.08);
+
+    border-radius:999px;
+
+    color:#111827;
+
+    font-size:.74rem;
+
+    font-weight:600;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    z-index:20;
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.badge-dot{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:999px;
+
+    background:#22C55E;
+
+    animation:pulseDot 1.8s infinite;
+
+}
+
+/* ===========================
+BROWSER
+=========================== */
+
+.browser{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:
+
+    0 30px 80px rgba(17,24,39,.08);
+
+    transition:
+
+    transform .5s,
+
+    box-shadow .5s;
+
+    transform-style:preserve-3d;
+
+}
+
+.browser:hover{
+
+    transform:
+
+    translateY(-12px)
+
+    rotateX(2deg)
+
+    rotateY(-3deg);
+
+    box-shadow:
+
+    0 45px 100px rgba(17,24,39,.12);
+
+}
+
+.browser::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    transparent,
+
+    rgba(255,255,255,.7),
+
+    transparent
+
+    );
+
+    transform:skewX(-20deg);
+
+    transition:1s;
+
+}
+
+.project:hover .browser::before{
+
+    left:170%;
+
+}
+
+/* ===========================
+TOP BAR
+=========================== */
+
+.browser-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:18px 22px;
+
+    background:#FAFAFA;
+
+    border-bottom:1px solid #ECECEC;
+
+}
+
+.browser-top span{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:999px;
+
+}
+
+.browser-top span:nth-child(1){
+
+    background:#FF5F57;
+
+}
+
+.browser-top span:nth-child(2){
+
+    background:#FEBC2E;
+
+}
+
+.browser-top span:nth-child(3){
+
+    background:#28C840;
+
+}
+
+.browser-top::after{
+
+    content:"preview.fikharstudio.dev";
+
+    margin-left:18px;
+
+    color:#9CA3AF;
+
+    font-size:.8rem;
+
+    letter-spacing:.03em;
+
+}
+
+/* ===========================
+IMAGE
+=========================== */
+
+.project-image{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    object-fit:cover;
+
+    transition:
+
+    transform .8s;
+
+}
+
+.project:hover .project-image{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+CTA
+=========================== */
+
+.projects-cta{
+
+    margin-top:220px;
+
+    padding-top:120px;
+
+    border-top:1px solid rgba(17,24,39,.08);
+
+    text-align:center;
+
+}
+
+.projects-cta h3{
+
+    margin-top:26px;
+
+    font-size:clamp(3rem,7vw,5rem);
+
+    line-height:1;
+
+    font-weight:300;
+
+    letter-spacing:-.04em;
+
+    color:#111827;
+
+}
+
+.projects-cta p{
+
+    margin:34px auto 0;
+
+    max-width:640px;
+
+    color:#6B7280;
+
+    line-height:2;
+
+}
+
+.cta-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:48px;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    background:#111827;
+
+    color:white;
+
+    transition:.35s;
+
+}
+
+.cta-button:hover{
+
+    transform:translateY(-5px);
+
+    background:#2563EB;
+
+}
+
+/* ===========================
+ANIMATION
+=========================== */
+
+@keyframes floatGlow{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-25px);
+
+    }
+
+}
+
+@keyframes pulseDot{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(34,197,94,.7);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 14px rgba(34,197,94,0);
+
+    }
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:1024px){
+
+    #projects{
+
+        padding:120px 0;
+
+    }
+
+    .project{
+
+        gap:80px;
+
+    }
+
+    .project-number{
+
+        font-size:120px;
+
+        top:-40px;
+
+    }
+
+    .project-title{
+
+        font-size:3rem;
+
+    }
+
+    .project-image{
+
+        height:420px;
+
+    }
+
+    .projects-cta{
+
+        margin-top:160px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .project-number{
+
+        display:none;
+
+    }
+
+    .project-actions{
+
+        flex-direction:column;
+
+    }
+
+    .project-link{
+
+        width:100%;
+
+    }
+
+    .project-image{
+
+        height:300px;
+
+    }
+
+    .browser{
+
+        border-radius:20px;
+
+    }
+
+    .project-badge{
+
+        top:16px;
+
+        right:16px;
+
+        font-size:.68rem;
+
+        padding:10px 14px;
+
+    }
+
+    .projects-cta{
+
+        margin-top:120px;
+
+        padding-top:80px;
+
+    }
+
+}

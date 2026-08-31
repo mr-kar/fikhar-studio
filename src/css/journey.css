@@ -1,0 +1,433 @@
+/*
+========================================
+FIKHAR STUDIO
+Journey Section
+Sprint 6.2 FINAL LAYOUT
+========================================
+*/
+
+#journey{
+    position:relative;
+}
+
+
+/* ===========================
+JOURNEY LIST
+=========================== */
+
+.journey-list{
+    position:relative;
+    width:100%;
+}
+
+
+/* ===========================
+JOURNEY ITEM
+=========================== */
+
+.journey-item{
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+        120px
+        56px
+        minmax(0, 1fr);
+
+    column-gap:32px;
+
+    width:100%;
+
+    padding-bottom:120px;
+}
+
+
+/* ===========================
+TIMELINE
+=========================== */
+
+.journey-line{
+    position:absolute;
+
+    left:148px;
+
+    top:10px;
+    bottom:0;
+
+    width:1px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(17,24,39,.16),
+            rgba(17,24,39,.06)
+        );
+}
+
+
+.journey-item:last-child{
+    padding-bottom:0;
+}
+
+
+.journey-item:last-child .journey-line{
+    display:none;
+}
+
+
+/* ===========================
+DOT
+=========================== */
+
+.journey-dot{
+    position:absolute;
+
+    left:50%;
+
+    top:4px;
+
+    width:12px;
+    height:12px;
+
+    transform:translateX(-50%);
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    border:3px solid #f7f7f5;
+
+    box-shadow:
+        0 0 0 1px rgba(17,24,39,.16),
+        0 0 24px rgba(37,99,235,.18);
+
+    z-index:5;
+}
+
+
+/* ===========================
+YEAR
+=========================== */
+
+.journey-year{
+    padding-top:0;
+
+    font-size:.82rem;
+
+    font-weight:500;
+
+    letter-spacing:.22em;
+
+    color:#6b7280;
+
+    text-transform:uppercase;
+
+    white-space:nowrap;
+}
+
+
+/* ===========================
+CONTENT
+=========================== */
+
+.journey-content{
+    position:relative;
+
+    width:100%;
+
+    max-width:760px;
+
+    padding-bottom:10px;
+}
+
+
+/* ===========================
+CATEGORY
+=========================== */
+
+.journey-category{
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    font-size:.72rem;
+
+    font-weight:500;
+
+    letter-spacing:.3em;
+
+    color:#2563eb;
+
+    text-transform:uppercase;
+}
+
+
+/* ===========================
+TITLE
+=========================== */
+
+.journey-title{
+    margin:0;
+
+    max-width:700px;
+
+    font-size:clamp(
+        2.4rem,
+        4vw,
+        4rem
+    );
+
+    font-weight:300;
+
+    line-height:1.05;
+
+    letter-spacing:-.035em;
+
+    color:#111827;
+}
+
+
+/* ===========================
+DESCRIPTION
+=========================== */
+
+.journey-description{
+    display:block;
+
+    width:100%;
+
+    max-width:620px;
+
+    margin-top:30px;
+
+    color:#6b7280;
+
+    font-size:1rem;
+
+    line-height:1.9;
+}
+
+
+/* ===========================
+STACK
+=========================== */
+
+.journey-stack{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:32px;
+}
+
+
+.journey-tech{
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:9px 15px;
+
+    border:1px solid rgba(17,24,39,.08);
+
+    border-radius:999px;
+
+    color:#6b7280;
+
+    background:rgba(255,255,255,.55);
+
+    font-size:.75rem;
+
+    transition:
+        transform .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        background .3s ease;
+}
+
+
+.journey-tech:hover{
+    transform:translateY(-3px);
+
+    color:#111827;
+
+    border-color:rgba(37,99,235,.35);
+
+    background:#ffffff;
+}
+
+
+/* ===========================
+CLOSING
+=========================== */
+
+.journey-closing{
+    position:relative;
+
+    max-width:760px;
+
+    margin:180px auto 0;
+
+    padding:80px 0;
+
+    text-align:center;
+
+    border-top:1px solid rgba(17,24,39,.08);
+}
+
+
+.journey-closing h3{
+    margin-top:24px;
+
+    font-size:clamp(
+        2.5rem,
+        6vw,
+        5rem
+    );
+
+    font-weight:300;
+
+    line-height:1;
+
+    letter-spacing:-.04em;
+
+    color:#111827;
+}
+
+
+.journey-closing p{
+    max-width:580px;
+
+    margin:32px auto 0;
+
+    color:#6b7280;
+
+    line-height:1.9;
+}
+
+
+/* ===========================
+TABLET
+=========================== */
+
+@media(max-width:1024px){
+
+    .journey-item{
+        grid-template-columns:
+            90px
+            44px
+            minmax(0,1fr);
+
+        column-gap:24px;
+    }
+
+    .journey-line{
+        left:114px;
+    }
+
+    .journey-content{
+        max-width:680px;
+    }
+
+}
+
+
+/* ===========================
+MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .journey-item{
+        grid-template-columns:
+            70px
+            32px
+            minmax(0,1fr);
+
+        column-gap:18px;
+
+        padding-bottom:90px;
+    }
+
+    .journey-line{
+        left:88px;
+    }
+
+    .journey-title{
+        font-size:2.5rem;
+    }
+
+    .journey-description{
+        max-width:100%;
+        font-size:.95rem;
+    }
+
+}
+
+
+/* ===========================
+SMALL MOBILE
+=========================== */
+
+@media(max-width:640px){
+
+    .journey-item{
+        display:block;
+
+        padding-left:28px;
+
+        padding-bottom:70px;
+    }
+
+    .journey-line{
+        left:5px;
+
+        top:8px;
+        bottom:0;
+    }
+
+    .journey-dot{
+        left:5px;
+
+        width:10px;
+        height:10px;
+
+        border-width:3px;
+    }
+
+    .journey-year{
+        margin-bottom:18px;
+
+        font-size:.75rem;
+    }
+
+    .journey-category{
+        margin-bottom:14px;
+    }
+
+    .journey-title{
+        font-size:2.2rem;
+    }
+
+    .journey-description{
+        margin-top:22px;
+    }
+
+    .journey-stack{
+        margin-top:24px;
+    }
+
+    .journey-closing{
+        margin-top:90px;
+
+        padding:50px 0;
+    }
+
+    .journey-closing h3{
+        font-size:2.8rem;
+    }
+
+}

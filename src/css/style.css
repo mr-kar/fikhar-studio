@@ -1,0 +1,385 @@
+@import "tailwindcss";
+@import "./projects.css";
+@import "./services.css";
+@import "./about.css";
+@import "./journey.css";
+@import "./contact.css";
+@import "./footer.css";
+
+/* ===========================
+   FIKHAR STUDIO DESIGN SYSTEM
+=========================== */
+
+:root{
+
+    --background:#F7F7F5;
+    --surface:#FFFFFF;
+
+    --text:#111827;
+    --secondary:#6B7280;
+
+    --border:#E5E7EB;
+
+    --accent:#2563EB;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:"Inter",sans-serif;
+
+    overflow-x:hidden;
+
+}
+.cursor{
+
+position:fixed;
+
+left:0;
+top:0;
+
+width:22px;
+height:22px;
+
+border-radius:9999px;
+
+background:#111;
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+z-index:9999;
+
+mix-blend-mode:difference;
+
+transition:width .25s,height .25s;
+
+}
+
+/* ==========================
+   CUSTOM CURSOR
+========================== */
+
+body{
+    cursor:none;
+}
+
+a,
+button{
+    cursor:none;
+}
+/* cursor V1 */
+/* #cursor{
+
+    width:20px;
+    height:20px;
+
+    border:1px solid white;
+
+    border-radius:999px;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:999999;
+
+    transition:
+    width .3s,
+    height .3s,
+    background .3s,
+    border .3s;
+
+    backdrop-filter:blur(6px);
+
+} */
+
+/* cursor V2*/
+#cursor{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:14px;
+    height:14px;
+
+    background:#ffffff;
+
+    border-radius:999px;
+
+    pointer-events:none;
+
+    z-index:999999;
+
+    transform:translate(-50%,-50%);
+
+    mix-blend-mode:difference;
+
+
+}
+
+/* end custom cursor */
+
+/* .browser{
+
+overflow:hidden;
+
+border-radius:32px;
+
+border:1px solid rgba(255,255,255,.08);
+
+background:#101010;
+position:relative;
+
+}
+
+.browser::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-150%;
+
+width:60%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.08),
+
+transparent
+
+);
+
+transform:skewX(-20deg);
+
+transition:1.2s;
+
+}
+
+.browser-top{
+
+display:flex;
+
+gap:8px;
+
+padding:18px;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.browser-top span{
+
+width:12px;
+
+height:12px;
+
+border-radius:999px;
+
+}
+
+.browser-top span:nth-child(1){
+
+background:#ef4444;
+
+}
+
+.browser-top span:nth-child(2){
+
+background:#facc15;
+
+}
+
+.browser-top span:nth-child(3){
+
+background:#22c55e;
+
+}
+
+.project-image{
+
+width:100%;
+
+height:550px;
+
+object-fit:cover;
+
+transition:1s;
+
+}
+
+.project:hover .project-image .browser::before{
+
+transform:scale(1.08);
+left:180%;
+
+
+}
+
+.tech{
+
+padding:.8rem 1.4rem;
+
+border-radius:999px;
+
+border:1px solid rgba(255,255,255,.08);
+
+color:#b3b3b3;
+
+font-size:.85rem;
+
+transition:.35s;
+
+}
+
+.tech:hover{
+
+border-color:#38bdf8;
+background-color:white;
+color:#111;
+
+transform:translateY(-4px);
+
+}
+
+.project-link{
+
+padding:16px 26px;
+
+border-radius:999px;
+
+border:1px solid rgba(255,255,255,.1);
+
+transition:.35s;
+
+}
+
+.project-link:hover{
+
+border-color:#38bdf8;
+
+}
+
+.badge{
+
+padding:10px 18px;
+
+border-radius:999px;
+
+background:rgba(34,197,94,.1);
+
+border:1px solid rgba(34,197,94,.25);
+
+color:#86efac;
+
+font-size:.75rem;
+
+letter-spacing:.25em;
+
+text-transform:uppercase;
+
+backdrop-filter:blur(20px);
+
+}
+
+.project-glow{
+
+position:absolute;
+
+width:420px;
+
+height:420px;
+
+right:-60px;
+
+top:80px;
+
+background:#0ea5e9;
+
+opacity:.12;
+
+filter:blur(120px);
+
+z-index:-1;
+
+animation:glowFloat 6s ease-in-out infinite;
+
+}
+
+@keyframes glowFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-30px);
+
+}
+
+}
+
+.dot{
+
+width:8px;
+
+height:8px;
+
+background:#22c55e;
+
+border-radius:999px;
+
+display:inline-block;
+
+margin-right:8px;
+
+animation:pulse 1.6s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(34,197,94,.8);
+
+}
+
+100%{
+
+box-shadow:0 0 0 12px rgba(34,197,94,0);
+
+}
+
+} */
