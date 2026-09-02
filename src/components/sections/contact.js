@@ -64,24 +64,25 @@ export default function Contact() {
                 <!-- EMAIL -->
                 <!-- ========================= -->
 
-                <a
-                    href="mailto:${contact.email}"
-                    class="contact-email"
-                >
-
-                    <span>
-
+                <div class="contact-actions">
+                    <a
+                        href="mailto:${contact.email}"
+                        class="contact-email"
+                    >
                         ${contact.email}
+                        <span class="contact-arrow">↗</span>
+                    </a>
 
-                    </span>
-
-                    <span class="contact-arrow">
-
-                        ↗
-
-                    </span>
-
-                </a>
+                    <a
+                        href="${contact.whatsapp.url}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-email"
+                    >
+                        ${contact.whatsapp.label}
+                        <span class="contact-arrow">↗</span>
+                    </a>
+                </div>
 
             </div>
 

@@ -89,7 +89,16 @@ DESCRIPTION
 /* ===========================
 EMAIL
 =========================== */
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
 
+.contact-email {
+    width: fit-content;
+}
 .contact-email {
 
     position: relative;
@@ -124,7 +133,11 @@ EMAIL
         border-color .4s ease;
 
 }
+    .contact-email + .contact-email {
 
+    margin-top: 18px;
+
+    }
 
 .contact-email:hover {
 
@@ -491,6 +504,12 @@ MOBILE
 
     }
 
+    .contact-email + .contact-email {
+
+    margin-top: 18px;
+
+    }
+
 
     .contact-side {
 
@@ -556,3 +575,4 @@ SMALL MOBILE
     }
 
 }
+

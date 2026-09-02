@@ -19,12 +19,12 @@ export const footer = {
 
         {
             label: "Home",
-            target: "#home"
+            target: "#hero"
         },
 
         {
             label: "Projects",
-            target: "#projects"
+            target: "#work"
         },
 
         {

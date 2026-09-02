@@ -17,6 +17,12 @@ export const contact = {
 
     email: "fikharramadhani2@gmail.com",
 
+    whatsapp: {
+    label: "Chat on WhatsApp",
+    number: "087857520602",
+    url: "https://wa.me/6287857520602"}
+    ,
+
     availability: "Available for selected projects",
 
     socials: [
