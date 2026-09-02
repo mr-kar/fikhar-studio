@@ -29,12 +29,12 @@ export const contact = {
 
         {
             label: "GitHub",
-            url: "#"
+            url: "https://github.com/mr-kar"
         },
 
         {
             label: "LinkedIn",
-            url: "#"
+            url: "https://www.linkedin.com/in/fikhar/"
         },
 
         {
