@@ -1,0 +1,11 @@
+export default function AboutPage() {
+    return `
+        <main>
+            <section class="min-h-screen flex items-center justify-center">
+                <h1 class="text-5xl font-bold">
+                    About
+                </h1>
+            </section>
+        </main>
+    `;
+}

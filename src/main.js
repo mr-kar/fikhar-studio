@@ -1,6 +1,6 @@
 import "./css/style.css";
 
-import App from "./App";
+import { renderPage } from "./router";
 
 import { initCursor } from "./js/cursor";
 import "./js/lenis";
@@ -15,7 +15,7 @@ import { journeyAnimation } from "./animations/journeyAnimation";
 import { contactAnimation } from "./animations/contactAnimation";
 import { footerAnimation } from "./animations/footerAnimation";
 
-document.querySelector("#app").innerHTML = App();
+document.querySelector("#app").innerHTML = renderPage();
 
 initCursor();
 
