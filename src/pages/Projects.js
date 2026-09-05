@@ -1,6 +1,8 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
+import { projects } from "../data/projects";
+
 export default function ProjectsPage() {
 
     return `
@@ -45,7 +47,7 @@ export default function ProjectsPage() {
 
 
             <!-- ========================= -->
-            <!-- PROJECT AREA -->
+            <!-- PROJECT LIST -->
             <!-- ========================= -->
 
             <section class="projects-page-list">
@@ -54,7 +56,60 @@ export default function ProjectsPage() {
 
                     <div class="projects-page-grid">
 
-                        <!-- Project cards akan masuk di 4B -->
+                        ${projects.map((project) => `
+
+                            <article class="projects-page-item">
+
+                                <div class="projects-page-number">
+                                    ${project.number}
+                                </div>
+
+                                <div class="projects-page-content">
+
+                                    <span class="projects-page-category">
+                                        ${project.category}
+                                    </span>
+
+                                    <h2 class="projects-page-title">
+                                        ${project.title}
+                                    </h2>
+
+                                    <span class="projects-page-year">
+                                        ${project.year}
+                                    </span>
+
+                                    <p class="projects-page-description">
+                                        ${project.description}
+                                    </p>
+
+                                    <div class="projects-page-stack">
+
+                                        ${project.stack.map((tech) => `
+
+                                            <span class="projects-page-tech">
+                                                ${tech}
+                                            </span>
+
+                                        `).join("")}
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="projects-page-preview">
+
+                                    <img
+                                        src="${project.image}"
+                                        alt="${project.title}"
+                                        class="projects-page-image"
+                                    >
+
+                                </div>
+
+                            </article>
+
+                        `).join("")}
 
                     </div>
 
