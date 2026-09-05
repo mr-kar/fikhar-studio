@@ -1,4 +1,4 @@
-import App from "./App";
+import Home from "./pages/Home";
 
 import ProjectsPage from "./pages/Projects";
 import AboutPage from "./pages/About";
@@ -25,8 +25,7 @@ export function renderPage() {
 
         case "/":
         default:
-            return App();
+            return Home();
 
     }
-
 }
